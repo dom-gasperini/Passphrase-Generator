@@ -30,7 +30,7 @@ struct qt_meta_stringdata_AboutDlg_t {
     char stringdata0[9];
     char stringdata1[19];
     char stringdata2[1];
-    char stringdata3[27];
+    char stringdata3[39];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_AboutDlg_t::offsetsAndSizes) + ofs), len 
@@ -39,12 +39,12 @@ Q_CONSTINIT static const qt_meta_stringdata_AboutDlg_t qt_meta_stringdata_AboutD
         QT_MOC_LITERAL(0, 8),  // "AboutDlg"
         QT_MOC_LITERAL(9, 18),  // "on_exitBtn_clicked"
         QT_MOC_LITERAL(28, 0),  // ""
-        QT_MOC_LITERAL(29, 26)   // "on_lockboxTitleBtn_clicked"
+        QT_MOC_LITERAL(29, 38)   // "on_passphraseGeneratorTitleBt..."
     },
     "AboutDlg",
     "on_exitBtn_clicked",
     "",
-    "on_lockboxTitleBtn_clicked"
+    "on_passphraseGeneratorTitleBtn_clicked"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -84,7 +84,7 @@ Q_CONSTINIT const QMetaObject AboutDlg::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<AboutDlg, std::true_type>,
         // method 'on_exitBtn_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_lockboxTitleBtn_clicked'
+        // method 'on_passphraseGeneratorTitleBtn_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -97,7 +97,7 @@ void AboutDlg::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         (void)_t;
         switch (_id) {
         case 0: _t->on_exitBtn_clicked(); break;
-        case 1: _t->on_lockboxTitleBtn_clicked(); break;
+        case 1: _t->on_passphraseGeneratorTitleBtn_clicked(); break;
         default: ;
         }
     }

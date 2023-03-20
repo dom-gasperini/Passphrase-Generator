@@ -27,11 +27,11 @@ public:
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_3;
     QVBoxLayout *verticalLayout;
-    QPushButton *lockboxTitleBtn;
+    QPushButton *passphraseGeneratorTitleBtn;
     QGridLayout *gridLayout;
     QLabel *authorLbl;
     QLabel *label;
-    QLabel *lockboxLogoLbl;
+    QLabel *passphraseGeneratorLogoLbl;
     QVBoxLayout *verticalLayout_2;
     QGridLayout *gridLayout_2;
     QLabel *qtVersionNumLbl;
@@ -58,11 +58,11 @@ public:
         verticalLayout_3->setContentsMargins(0, 0, 0, 0);
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        lockboxTitleBtn = new QPushButton(layoutWidget);
-        lockboxTitleBtn->setObjectName("lockboxTitleBtn");
-        lockboxTitleBtn->setStyleSheet(QString::fromUtf8("font: 700 oblique 12pt \"DejaVu Sans\";"));
+        passphraseGeneratorTitleBtn = new QPushButton(layoutWidget);
+        passphraseGeneratorTitleBtn->setObjectName("passphraseGeneratorTitleBtn");
+        passphraseGeneratorTitleBtn->setStyleSheet(QString::fromUtf8("font: 700 oblique 12pt \"DejaVu Sans\";"));
 
-        verticalLayout->addWidget(lockboxTitleBtn);
+        verticalLayout->addWidget(passphraseGeneratorTitleBtn);
 
         gridLayout = new QGridLayout();
         gridLayout->setObjectName("gridLayout");
@@ -84,11 +84,11 @@ public:
 
         verticalLayout_3->addLayout(verticalLayout);
 
-        lockboxLogoLbl = new QLabel(layoutWidget);
-        lockboxLogoLbl->setObjectName("lockboxLogoLbl");
-        lockboxLogoLbl->setAlignment(Qt::AlignCenter);
+        passphraseGeneratorLogoLbl = new QLabel(layoutWidget);
+        passphraseGeneratorLogoLbl->setObjectName("passphraseGeneratorLogoLbl");
+        passphraseGeneratorLogoLbl->setAlignment(Qt::AlignCenter);
 
-        verticalLayout_3->addWidget(lockboxLogoLbl);
+        verticalLayout_3->addWidget(passphraseGeneratorLogoLbl);
 
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName("verticalLayout_2");
@@ -140,10 +140,10 @@ public:
     {
         AboutDlg->setWindowTitle(QCoreApplication::translate("AboutDlg", "Dialog", nullptr));
         exitBtn->setText(QCoreApplication::translate("AboutDlg", "Done", nullptr));
-        lockboxTitleBtn->setText(QCoreApplication::translate("AboutDlg", "Passphrase Generator", nullptr));
+        passphraseGeneratorTitleBtn->setText(QCoreApplication::translate("AboutDlg", "Passphrase Generator", nullptr));
         authorLbl->setText(QCoreApplication::translate("AboutDlg", "Author:", nullptr));
         label->setText(QCoreApplication::translate("AboutDlg", "Dominic Gasperini", nullptr));
-        lockboxLogoLbl->setText(QCoreApplication::translate("AboutDlg", "Lockbox Logo", nullptr));
+        passphraseGeneratorLogoLbl->setText(QCoreApplication::translate("AboutDlg", "Lockbox Logo", nullptr));
         qtVersionNumLbl->setText(QCoreApplication::translate("AboutDlg", "QT VERSION", nullptr));
         qtVersionLbl->setText(QCoreApplication::translate("AboutDlg", "Qt Version:", nullptr));
         cppVersionLbl->setText(QCoreApplication::translate("AboutDlg", "C++ Version: ", nullptr));

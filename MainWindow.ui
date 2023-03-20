@@ -30,98 +30,111 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>200</y>
+      <y>220</y>
       <width>231</width>
-      <height>61</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="text">
      <string>Generate Phrases</string>
     </property>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>10</y>
-      <width>191</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QLabel" name="selectComplexityLbl">
-       <property name="styleSheet">
-        <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;
-text-decoration: underline;</string>
-       </property>
-       <property name="text">
-        <string>Select Complexity Level:</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QComboBox" name="complexityCmbx">
-       <property name="currentIndex">
-        <number>0</number>
-       </property>
-       <item>
-        <property name="text">
-         <string>Basic</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Moderate</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Complex</string>
-        </property>
-       </item>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>90</y>
+      <y>10</y>
       <width>251</width>
-      <height>81</height>
+      <height>201</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <widget class="QLabel" name="exampleComplexityLbl">
-       <property name="styleSheet">
-        <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;
+    <property name="title">
+     <string>Setup</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>191</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="selectComplexityLbl">
+        <property name="styleSheet">
+         <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;
 text-decoration: underline;</string>
-       </property>
-       <property name="text">
-        <string>Example of Phrase Complexity:</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="exampleComplexityTextLineE">
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
+        </property>
+        <property name="text">
+         <string>Select Complexity Level:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="complexityCmbx">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Basic</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Moderate</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Complex</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>231</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="exampleComplexityLbl">
+        <property name="styleSheet">
+         <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;
+text-decoration: underline;</string>
+        </property>
+        <property name="text">
+         <string>Example of Phrase Complexity:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="exampleComplexityTextLineE">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

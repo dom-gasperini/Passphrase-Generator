@@ -87,7 +87,7 @@
      </layout>
     </item>
     <item>
-     <widget class="QLabel" name="lockboxLogoLbl">
+     <widget class="QLabel" name="passphraseGeneratorLogoLbl">
       <property name="text">
        <string>Lockbox Logo</string>
       </property>
