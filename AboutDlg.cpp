@@ -19,7 +19,7 @@ AboutDlg::AboutDlg(QWidget *parent) : QDialog(parent), ui(new Ui::AboutDlg)
     // Setup UI
     ui->setupUi(this);
     this->setWindowTitle("About");
-    ui->lockboxLogoLbl->setPixmap(QPixmap(":/icons/lockbox.png").scaledToWidth(ui->lockboxLogoLbl->width()));
+    ui->passphraseGeneratorLogoLbl->setPixmap(QPixmap(":/icons/passphrase.png").scaledToWidth(ui->passphraseGeneratorLogoLbl->width()));
     ui->qtLogoLbl->setPixmap(QPixmap(":/icons/qt_logo.png").scaledToWidth(ui->qtLogoLbl->width()));
 
     // Fill in text boxes with information
@@ -57,7 +57,7 @@ void AboutDlg::on_exitBtn_clicked()
 /**
  * @brief AboutDlg::on_lockboxTitleBtn_clicked
  */
-void AboutDlg::on_lockboxTitleBtn_clicked()
+void AboutDlg::on_passphraseGeneratorTitleBtn_clicked()
 {
     QDesktopServices::openUrl(QUrl("https://shattereddisk.github.io/rickroll/rickroll.mp4", QUrl::TolerantMode));
 }

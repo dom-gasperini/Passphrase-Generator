@@ -6,7 +6,7 @@
 #include "ui_MainWindow.h"
 
 // defines
-#define DISPLAY_UPDATE_INTERVAL     20      // in milliseconds
+#define DISPLAY_UPDATE_INTERVAL     200      // in milliseconds
 
 /**
  * @brief MainWindow::MainWindow
@@ -16,6 +16,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 {
     // setup ui
     ui->setupUi(this);
+    this->setWindowTitle("Passphrase Generator");
+    this->setWindowIconText("");
 
     // init class variables
     m_pGenerator = new Generator();

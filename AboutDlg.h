@@ -34,7 +34,7 @@ public:
 private slots:
     void on_exitBtn_clicked();
 
-    void on_lockboxTitleBtn_clicked();
+    void on_passphraseGeneratorTitleBtn_clicked();
 
 private:
     // UI Variables

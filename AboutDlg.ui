@@ -51,7 +51,7 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QPushButton" name="lockboxTitleBtn">
+       <widget class="QPushButton" name="passphraseGeneratorTitleBtn">
         <property name="styleSheet">
          <string notr="true">font: 700 oblique 12pt &quot;DejaVu Sans&quot;;</string>
         </property>
