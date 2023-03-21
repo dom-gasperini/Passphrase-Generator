@@ -7,6 +7,7 @@
 // includes
 #include <QMainWindow>
 #include <QTimer>
+#include <QStyleFactory>
 #include "Generator.h"
 #include "AboutDlg.h"
 
@@ -27,6 +28,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    // palette
+    QPalette m_currentPalette;
+
     // Timers
     QTimer *m_pUpdateDisplayTimer;
 
@@ -39,6 +43,8 @@ private slots:
    void on_actionAbout_triggered();
 
    void on_generatePhrasesBtn_clicked();
+
+   void on_actionDark_Mode_toggled(bool arg1);
 
 private:
     Ui::MainWindow *ui;

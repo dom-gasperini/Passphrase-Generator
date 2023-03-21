@@ -138,7 +138,7 @@ public:
         actionDark_Mode->setText(QCoreApplication::translate("MainWindow", "Dark Mode", nullptr));
         actionAbout->setText(QCoreApplication::translate("MainWindow", "About", nullptr));
         generatePhrasesBtn->setText(QCoreApplication::translate("MainWindow", "Generate Phrases", nullptr));
-        groupBox->setTitle(QCoreApplication::translate("MainWindow", "GroupBox", nullptr));
+        groupBox->setTitle(QCoreApplication::translate("MainWindow", "Setup", nullptr));
         selectComplexityLbl->setText(QCoreApplication::translate("MainWindow", "Select Complexity Level:", nullptr));
         complexityCmbx->setItemText(0, QCoreApplication::translate("MainWindow", "Basic", nullptr));
         complexityCmbx->setItemText(1, QCoreApplication::translate("MainWindow", "Moderate", nullptr));
