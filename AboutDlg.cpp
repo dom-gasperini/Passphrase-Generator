@@ -21,7 +21,7 @@ AboutDlg::AboutDlg(QWidget *parent) : QDialog(parent), ui(new Ui::AboutDlg)
     this->setWindowTitle("About");
     this->setWindowIcon(QIcon("lock.ico"));
     ui->passphraseGeneratorLogoLbl->setPixmap(QPixmap("lock.png").scaledToWidth(ui->passphraseGeneratorLogoLbl->width()));
-    ui->qtLogoLbl->setPixmap(QPixmap(":/icons/qt_logo.png").scaledToWidth(ui->qtLogoLbl->width()));
+    ui->qtLogoLbl->setPixmap(QPixmap("qt_logo.png").scaledToWidth(ui->qtLogoLbl->width()));
 
     // Fill in text boxes with information
     ui->cppVersionNumLbl->setText(QString::number(CPP_VERSION));

@@ -52,7 +52,7 @@ public:
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(275, 325);
         MainWindow->setMinimumSize(QSize(275, 325));
-        MainWindow->setMaximumSize(QSize(375, 325));
+        MainWindow->setMaximumSize(QSize(275, 325));
         actionDark_Mode = new QAction(MainWindow);
         actionDark_Mode->setObjectName("actionDark_Mode");
         actionDark_Mode->setCheckable(true);
