@@ -45,8 +45,23 @@ Component.prototype.createOperations = function()
     try {
         // call the base create operations function
         component.createOperations();
+        if (installer.value("os") == "win") {
+            try {
+                var userProfile = installer.environmentVariable("USERPROFILE");
+                installer.setValue("UserProfile", userProfile);
+                component.addOperation("CreateShortcut",
+                                            "@TargetDir@/PassphraseGenerator.exe",                      // target
+                                            "@DesktopDir@/PassphraseGenerator.lnk",                     // link-path
+                                            "workingDirectory=@TargetDir@",                             // working-dir
+                                            "iconPath=@TargetDir@/lock.ico",                            // icon
+                                            "description=Create passphrases!");                         // description
+            }
+            catch (e) {
+                // Do nothing if key doesn't exist
+            }
+        }
     } catch (e) {
-        console.log(e);
+        print(e);
     }
 }
 
